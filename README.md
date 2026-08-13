@@ -17,11 +17,10 @@ The cells shared a common height and aligned `VDD` and `VSS` rails so they could
 The library contains eleven combinational cells, `INV`, `BUF`, `NAND2`, `NOR2`, `AND2`, `OR2`, `AOI21`, `OAI21`, `XOR2`, `XNOR2`, and `MUX2`, along with the sequential `LATCH` and `DFF` cells.
 
 <p align="center">
-<img src="images/and2_schematic.png" alt="Transistor-level AND2 schematic" width="430">
-&nbsp;&nbsp;
-<img src="images/and2_layout.png" alt="Custom AND2 standard-cell layout" width="430">
-<br>
-<em>Representative AND2 cell at the schematic and physical-layout levels.</em>
+  <img src="images/and2_schematic.png" alt="Transistor-level AND2 schematic" width="45%">
+  <img src="images/and2_layout.png" alt="Custom AND2 standard-cell layout" width="45%">
+  <br>
+  <em>Representative AND2 cell at the schematic and physical-layout levels.</em>
 </p>
 
 Liberty timing and LEF physical views were also generated for use in the later Innovus flows.
