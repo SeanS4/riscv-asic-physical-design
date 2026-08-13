@@ -23,8 +23,6 @@ The library contains eleven combinational cells, `INV`, `BUF`, `NAND2`, `NOR2`, 
   <em>Representative AND2 cell at the schematic and physical-layout levels.</em>
 </p>
 
-Liberty timing and LEF physical views were also generated for use in the later Innovus flows.
-
 ## Bitslice Architecture
 
 The datapath was divided into identical bitslices, each handling the circuitry associated with one corresponding bit. Matching interfaces allowed the slices to be joined together to form the complete datapath. Shared control signals follow consistent routes through each slice, while connections between adjacent slices are aligned at their boundaries. For example, `cin` and `cout` connect from one slice to the next to form the arithmetic carry chain for the ALU.
