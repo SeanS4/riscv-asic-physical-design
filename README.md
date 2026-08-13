@@ -43,7 +43,7 @@ The ALU schematic was built hierarchically from various symbols that were each a
 <em>One-bit ALU schematic constructed from symbols in the custom cell library.</em>
 </p>
 
-The ALU layout was assembled by routing together instances of the layouts of the standard cells that were used to construct the schematic. Signals connecting the ALU to logic within the bitslice, such as `alu_mux_1` and `alu_out`, are placed along the left and right edges, while control and carry signals such as `alu_op<1>` and `alu_cin` are exposed at the top and bottom of the layout to enable easy connections with neighboring bitslices.
+The ALU layout was assembled by routing together instances of the layouts of the standard cells that were used to construct the schematic. Signals connecting the ALU to logic within the bitslice, such as `alu_mux_1_out` and `alu_out`, are placed along the left and right edges, while control and carry signals such as `alu_op<1>` and `alu_cin` are exposed at the top and bottom of the layout to enable easy connections with neighboring bitslices.
 
 <p align="center">
 <img src="images/alu_layout.png" alt="Custom one-bit ALU physical layout in Cadence Virtuoso" width="900">
