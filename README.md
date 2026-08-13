@@ -85,7 +85,7 @@ The routed controller was imported into Virtuoso and connected to the correspond
 
 ### Automated Place and Route of Full CPU
 
-A separate physical design flow automats the routing of the entire processor directly from the custom standard cell library, without preserving the manually constructed datapath blocks or bitslice layout used earlier. To utilize the old custom standard cells, abstract views were generated in Virtuoso to define pin locations and routing blockages, then exported as a LEF file for Innovus. A Liberty file provided the corresponding logical information used during synthesis.
+A separate physical design flow automates the routing of the entire processor directly from the custom standard cell library, without preserving the manually constructed datapath blocks or bitslice layout used earlier. To utilize the old custom standard cells, abstract views were generated in Virtuoso to define pin locations and routing blockages, then exported as a LEF file for Innovus. A Liberty file provided the corresponding logical information used during synthesis.
 
 A course-provided Tcl skeleton was completed by working through Innovus documentation on valid commands. Running the completed script placed and routed the synthesized CPU entirely from instances of the custom standard cells.
 
