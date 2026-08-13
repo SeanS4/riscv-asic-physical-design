@@ -25,7 +25,7 @@ The library contains eleven combinational cells, `INV`, `BUF`, `NAND2`, `NOR2`, 
 
 ## Bitslice Architecture
 
-The datapath was divided into identical bitslices, each handling the circuitry associated with one corresponding bit. Matching interfaces allowed the slices to be joined together to form the complete datapath. Shared control signals follow consistent routes through each slice, while connections between adjacent slices are aligned at their boundaries. For example, `cin` and `cout` connect from one slice to the next to form the arithmetic carry chain for the ALU.
+The datapath was divided into identical bitslices, each handling the circuitry associated with one corresponding bit. Matching interfaces allowed the slices to be joined together to form the complete datapath. Shared control signals follow consistent routes through each slice, while connections between adjacent slices are aligned at their boundaries. For example, `alu_cin` and `alu_cout` connect from one slice to the next to form the arithmetic carry chain for the ALU.
 
 <p align="center">
 <img src="images/bitslice.svg" alt="Bit-sliced RISC-V processor datapath architecture" width="850">
