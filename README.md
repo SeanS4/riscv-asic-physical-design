@@ -17,8 +17,8 @@ The cells shared a common height and aligned `VDD` and `VSS` rails so they could
 The library contains eleven combinational cells, `INV`, `BUF`, `NAND2`, `NOR2`, `AND2`, `OR2`, `AOI21`, `OAI21`, `XOR2`, `XNOR2`, and `MUX2`, along with the sequential `LATCH` and `DFF` cells.
 
 <p align="center">
-  <img src="images/and2_schematic.png" alt="Transistor-level AND2 schematic" width="35%">
-  <img src="images/and2_layout.png" alt="Custom AND2 standard-cell layout" width="55%">
+  <img src="images/and2_schematic.png" alt="Transistor-level AND2 schematic" width="55%">
+  <img src="images/and2_layout.png" alt="Custom AND2 standard-cell layout" width="35%">
   <br>
   <em>Representative AND2 cell at the schematic and physical-layout levels.</em>
 </p>
