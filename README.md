@@ -30,7 +30,7 @@ The datapath was divided into identical bitslices, each handling the circuitry a
 <p align="center">
 <img src="images/bitslice.svg" alt="Bit-sliced RISC-V processor datapath architecture" width="850">
 <br>
-<em>Course-provided architecture reference for one bit position of the processor datapath.</em>
+<em>Course-provided architecture reference of modules necessary within one bitslice of the processor datapath.</em>
 </p>
 
 ### Arithmetic Logic Unit
