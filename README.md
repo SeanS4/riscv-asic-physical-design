@@ -55,7 +55,7 @@ The ALU layout was assembled by routing together instances of the layouts of the
 
 The top-level datapath schematic, composed of 32 bitslice schematics, was netlisted and simulated using a test program. The resulting output was compared with the golden output from the course-provided SystemVerilog reference processor to verify matching behavior.
 
-Similarly, the datapath layout was then constructed by routing together 32 instances of bitslice layouts, which then passed DRC and LVS.
+The datapath layout was then constructed by routing together 32 instances of bitslice layouts, which then passed DRC and LVS.
 
 <p align="center">
 <img src="images/datapath_layout.png" alt="Complete manually laid-out 32-bit bit-sliced RISC-V datapath" width="900">
