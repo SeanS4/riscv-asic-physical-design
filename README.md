@@ -97,7 +97,7 @@ A course-provided Tcl skeleton was completed by working through Innovus document
 
 ### Automated Place and Route of Full CPU with Custom Register File
 
-A second flow reintroduced the register file layout originally developed for the manually routed datapath. The register file was packaged as a physical macro, with its instances fixed in the floorplan while Innovus placed and routed the remaining standard cell logic.
+A second flow reintroduced the register file layout originally developed for the manually routed datapath. The register file was packaged as a physical macro, with its instances fixed in the floorplan while Innovus placed and routed the remaining standard cell logic. The register file instanced can be identified by their rigid, rectangular structure in the bottom left of the floorplan.
 
 <p align="center">
 <img src="images/cpu2.png" alt="Full CPU physical design incorporating a custom register-file macro" width="800">
