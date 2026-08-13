@@ -10,7 +10,7 @@ This project covers the physical design of a 32-bit bit-sliced RISC-V processor.
 
 ## Custom Standard Cell Library
 
-To start, a library of thirteen logic cells was designed for FreePDK45. Each cell is based off of a CMOS schematic that was functionally simulated before layout. Transistor sizing accounted for the lower mobility of holes relative to electrons in silicon. PMOS devices were therefore made approximately 2× wider than comparable NMOS devices to achieve similar drive strength, with additional width used in series stacks to compensate for their higher effective resistance. Euler paths guided transistor ordering so adjacent devices could share diffusion, reducing breaks in the active region and keeping the layouts compact.
+To start, a library of thirteen logic cells was designed for FreePDK45. Each cell is based on a CMOS schematic that was functionally simulated before layout. Transistor sizing accounted for the lower mobility of holes relative to electrons in silicon. PMOS devices were therefore made approximately 2× wider than comparable NMOS devices to achieve similar drive strength, with additional width used in series stacks to compensate for their higher effective resistance. Euler paths guided transistor ordering so adjacent devices could share diffusion, reducing breaks in the active region and keeping the layouts compact.
 
 The cells shared a common height and aligned `VDD` and `VSS` rails so they could form seamless rows when placed horizontally. Each layout passed design-rule checking (DRC) and layout-versus-schematic (LVS) verification, and symbols generated from the verified schematics were used for hierarchical design.
 
@@ -85,7 +85,7 @@ The routed controller was imported into Virtuoso and connected to the correspond
 
 ### Automated Place and Route of Full CPU
 
-A separate physical design flow automates the routing of the entire processor directly from the custom standard cell library, without preserving the manually constructed datapath blocks or bitslice layout used earlier. To utilize the old custom standard cells, abstract views were generated in Virtuoso to define pin locations and routing blockages, then exported as a LEF file for Innovus. A Liberty file provided the corresponding logical information used during synthesis.
+A separate physical design flow automates the physical implementation of the entire processor directly from the custom standard cell library, without preserving the manually constructed datapath blocks or bitslice layout used earlier. To utilize the old custom standard cells, abstract views were generated in Virtuoso to define pin locations and routing blockages, then exported as a LEF file for Innovus. A Liberty file provided the corresponding logical information used during synthesis.
 
 A course-provided Tcl skeleton was completed by working through Innovus documentation on valid commands. Running the completed script placed and routed the synthesized CPU entirely from instances of the custom standard cells.
 
